@@ -7,16 +7,28 @@
   <child-component @getDataFromChild="getDataFromChild" />
 
   <h3>Toy Data from child :{{ kidsToyData }}</h3>
+
+  <base-card
+    mobileName="MOTOROLA g82 5g(White Lily,128 GB) (6 GB RAM)"
+    rating="4.1"
+    mobilePrice="16500"
+  />
+  <base-card
+    mobileName="SAMSUNG GALAXY F13(Nightsky Green,64GB) (4GB RAM)"
+    rating="3.2"
+    mobilePrice="8500"
+  />
 </template>
 
 <script>
 import ChildComponent from "./components/ChildComponent.vue";
+import BaseCard from "./components/BaseCard.vue";
 // import MyComponent from "./components/MyComponent.vue";
 export default {
   name: "App",
   components: {
     ChildComponent,
-    // MyComponent,
+    BaseCard,
   },
   data() {
     return {
